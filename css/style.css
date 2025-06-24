@@ -217,43 +217,65 @@ background-color:transparent;
   border-radius: 8px;
 }
 
-#categoria1 h2{
-	font-family: "Monserrat", san selfi;
+#categoria1, #categoria2, #categoria3,
+#categoria4 {
+	padding-top: -100px;
+}
+
+#categoria1 h2, #categoria3 h2,
+#categoria4 h2, #categoria2 h2{
+	font-family: 'Montserrat', san-selfi;
 	font-size: 50px;
 	color: #4F772D;
 }
 
-#categoria1 h2{
-	font-family: "Monserrat", san selfi;
-	font-size: 50px;
-	color: #4F772D;
-}
-#categoria1 h4{
-	font-family: "Monserrat", san selfi;
+#categoria1 h4, #categoria2 h4,
+#categoria3 h4, #categoria4 h4{
+	font-family: 'Montserrat', san selfi;
 	font-size: 25px;
 	color: #9DA955;
 }
 
-#categoria1 h5{
-	font-family: "Monserrat", san selfi;
+#categoria1 h5,#categoria2 h5,
+#categoria3 h5,#categoria4 h5 {
+	font-family: 'Montserrat', san-selfi;
 	font-size: 15px;
 	color: #31572C;
 }
 
 #fila1 h3, #fila2 h3,#fila3 h3{
-	font-family: "Monserrat", san selfi;
+	font-family: 'Montserrat', san-selfi;
 	font-size: 20px;
 	color: #132A13;
 }
 
-#categoria1  nav {
+#fila4 h3, #fila5 h3,#fila6 h3{
+	font-family: 'Montserrat', san-selfi;
+	font-size: 15px;
+	color: #132A13;
+}
+
+#menu h2{
+	font-family: 'Montserrat', san-selfi;
+	font-size: 25px;
+	padding-top: 60px;
+}
+
+#menu p{
+	font-family: 'Montserrat', san-selfi;
+	font-size: 20px;
+	padding-top: 1px;
+}
+
+#menu nav, #categoria1  nav, #categoria2  nav,
+#categoria3  nav, #categoria4  nav{
     display: flex;
     justify-content: center;
     gap: 24px; /* espacio entre links */
     background-color: transparent; /* bg-gray-800 */
     padding: 1rem;
-	font-family: "Monserrat", san selfi;
-	font-size: 25px;
+	font-family: 'Montserrat', san-selfi;
+	font-size: 20px;
   }
 
   nav a {
@@ -266,15 +288,423 @@ background-color:transparent;
     color: #90a955;
   }
 
+toolbar-inner {
+	color: #ffffff
+}
 
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #f9f9f9; 
+      color: #333;
+    }
 
+    .about-us-container {
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
 
+    h1, h2, h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+    }
 
+    h1 {
+      font-size: 2rem;
+      text-align: center;
+      color: #666;
+      margin-bottom: 10px;
+    }
 
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
 
+    .subtitle {
+      text-align: center;
+      color: #a57e4d;
+      font-size: 1rem;
+      margin-bottom: 40px;
+      font-weight: 500;
+    }
 
+    .section {
+      margin-bottom: 60px;
+    }
 
+    .team-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px;
+    }
 
+    .team-section > div {
+      flex: 1 1 calc(33% - 15px);
+      min-width: 280px;
+      background-color: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .team-section img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .team-description {
+      padding: 15px;
+    }
+
+    .team-description h3 {
+      margin-top: 0;
+      color: #333;
+      font-size: 1.2rem;
+    }
+
+    .team-description p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    .team-section > div:hover {
+      transform: translateY(-5px);
+    }
+
+    .history-section {
+      text-align: center;
+    }
+
+    .history-section h2 {
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .history-section p {
+      color: #777;
+      margin: 10px 0 20px;
+    }
+
+    .history-images {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .history-images img {
+      width: 30%;
+      max-width: 250px;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      color: #aaa;
+      font-size: 12px;
+      padding-bottom: 20px;
+    }
+	  /* === Colores de las secciones === */
+.hero-section {
+  background-color: #f8f4e3; /* Crema suave */
+  padding: 40px 20px;
+  border-radius: 12px;
+}
+
+.desarrolladores-section {
+  background-color: #e3f2fd; /* Azul claro */
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.operativo-section {
+  background-color: #e8f5e9; /* Verde claro */
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.history-section {
+  background-color: #f5f5f5; /* Gris muy claro */
+  padding: 40px 20px;
+  border-radius: 12px;
+}
+
+.footer-section {
+  background-color: white;
+  padding: 20px 0;
+}
+
+  .section {
+    margin-bottom: 60px;
+  }
+
+  /* === Colores de las secciones === */
+  .hero-section {
+    background-color: #f8f4e3;
+    padding: 40px 20px;
+    border-radius: 12px;
+  }
+
+  .desarrolladores-section {
+    background-color: #e8f5e9;
+    padding: 30px;
+    border-radius: 12px;
+  }
+
+  .operativo-section {
+    background-color: #e8f5e9;
+    padding: 30px;
+    border-radius: 12px;
+  }
+
+  .history-section {
+    background-color: #f5f5f5;
+    padding: 40px 20px;
+    border-radius: 12px;
+  }
+
+  .footer-section {
+    background-color: white;
+    padding: 20px 0;
+  }
+	  /* === Tamaño fijo cuadrado === */
+.team-section img,
+.history-images img {
+  width: 340px;
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.team-section > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.hero-section {
+  background-image: url(../img/restaurant-interior.jpg"); /* Ruta de tu imagen */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 20px;
+  border-radius: 12px;
+  text-align: center;
+  position: relative;
+  color: white;
+}
+
+/* Overlay opcional para mejorar legibilidad del texto */
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Negro semitransparente */
+  z-index: 1;
+}
+
+/* Contenido encima del overlay */
+.hero-section > * {
+  position: relative;
+  z-index: 2;
+}
+/* === Reset básico === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* === Tipografía y base === */
+body,
+html {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.view,
+.page-content {
+  overflow-y: auto;
+}
+
+/* === Contenedor principal === */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* === Encabezados y subtítulos === */
+h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #a57e4d;
+  font-size: 1rem;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+/* === Platos Destacados === */
+.platos-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.plato-row {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.plato-row img {
+  width: 30%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.plato-info {
+  flex: 1;
+  padding-left: 20px;
+}
+
+.plato-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.plato-description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.order-button {
+  background-color: #e0b84c;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.order-button:hover {
+  background-color: #c79e3a;
+}
+
+#menuabajo .toolbar.toolbar-bottom.tabbar-labels {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #4f772d;
+  color: white;
+}
+
+#menuabajo.toolbar.toolbar-bottom.tabbar-labels .tab-link {
+  color: white;
+}
+
+#menuabajo.toolbar.toolbar-bottom.tabbar-labels .tab-link:hover {
+  color: white;
+}
+
+.page-content {
+  padding-bottom: 70px; 
+}
+
+.product-container {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    max-width: 900px;
+    margin: auto;
+  }
+  .product-image {
+    flex: 1 1 50%;
+  }
+  .product-image img {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+  }
+  .product-details {
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+  }
+  .product-name {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+	 color: #4F772D 
+  }
+  .product-description {
+    margin-bottom: 1px;
+  color: #000000;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  padding-top: 1px;
+  font-weight: 500;
+  }
+  .product-price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #31572C; /* verde oscuro */
+  }
+  .buy-button {
+    background-color: #31572C;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: flex-start;
+  }
+  .buy-button:hover {
+    background-color: #90a955; /* verde oliva */
+  }
+#producto {
+	padding-top: 70px;
+}
+
+#producto h2{ 
+	font-family: 'Montserrat', san-selfi;
+	font-size: 50px;
+	padding-top: 1px;
+	color: #4F772D
+}
 
 
